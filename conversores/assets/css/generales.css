@@ -1,0 +1,85 @@
+/* Basico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: #faf7f1;
+}
+
+#all {
+    font-family: Arial, sans-serif;
+    font-size: 19px;
+    padding: 0;
+    color: black;
+    margin: 0px 15rem;
+}
+
+header {
+    padding: 20px 0;
+}
+
+#menu_general {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    font-size: 4rem;
+    font-family: "Rationale", serif;
+    font-weight: bold;
+    color: rgb(0, 81, 3);
+    text-decoration: none;
+}
+
+.menu_opciones {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu_opciones>li {
+    font-family: "Roboto", serif;
+    font-size: 1.9rem;
+    position: relative;
+    cursor: pointer;
+    margin: 0 2rem;
+    font-weight: bold;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+}
+
+.submenu li {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.submenu li:hover {
+    background: #555;
+}
+
+.menu_opciones>li:hover .submenu {
+    display: block;
+}
